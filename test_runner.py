@@ -42,7 +42,7 @@ class TestCase:
             method = getattr(self, self.name)
             method()
         except:
-            result.test_started()
+            result.test_failed()
         self.tear_down()
 
 
